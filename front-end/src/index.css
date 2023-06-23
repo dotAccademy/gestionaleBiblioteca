@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+:root {
+  --green: #2592ac;
+  --grey: #d9d9d9;
+}
