@@ -37,7 +37,7 @@ public class BibliotecaDataLoder implements CommandLineRunner{
         libriService.save(lib2);
         libriService.save(lib3);
         
-
+        System.out.println("che bello è ");
     }    
     
 }

@@ -26,7 +26,7 @@ public class Genere {
     private String name;
 
 
-    @OneToOne(fetch = FetchType.EAGER, mappedBy = "libri")
+    @OneToOne(fetch = FetchType.EAGER, mappedBy = "genre")
     private Libri libri;
 
 

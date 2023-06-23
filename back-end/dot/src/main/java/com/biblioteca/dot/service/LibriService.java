@@ -4,9 +4,11 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.biblioteca.dot.model.Libri;
 import com.biblioteca.dot.repository.LibriRepository;
+@Service
 
 public class LibriService {
     @Autowired
