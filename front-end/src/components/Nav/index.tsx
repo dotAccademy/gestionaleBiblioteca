@@ -12,7 +12,7 @@ const Nav = () => {
           </p>
         </div>
       </div>
-      <div className="col">
+      <div className="col-4">
         <form className="d-flex justify-content-end " role="search">
           <input
             className="form-control me-2"
@@ -20,7 +20,7 @@ const Nav = () => {
             placeholder="Scrivi il titolo del libro..."
             aria-label="Search"
           />
-          <button className="btn bg-" type="submit">
+          <button className="btn bg-green text-white" type="submit">
             Cerca
           </button>
         </form>
