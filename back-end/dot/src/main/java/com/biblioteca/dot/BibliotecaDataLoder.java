@@ -29,9 +29,9 @@ public class BibliotecaDataLoder implements CommandLineRunner{
         genereService.save(gen2);
         genereService.save(gen3);
 
-        Libri lib1 = new Libri("HarryPotter1", "Jnlo", 17.99, 20, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjSNP2-Mb4sDSClSZJZuaOChHGt7TmrWV_lbsjl3N1viZJ4SB");
-        Libri lib2 = new Libri("HarryPotter2", "Jnlo", 17.99, 15, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjSNP2-Mb4sDSClSZJZuaOChHGt7TmrWV_lbsjl3N1viZJ4SB" );
-        Libri lib3 = new Libri("HarryPotter3", "Jnlo", 17.99, 10, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjSNP2-Mb4sDSClSZJZuaOChHGt7TmrWV_lbsjl3N1viZJ4SB" );
+        Libri lib1 = new Libri("HarryPotter1", "Jnlo", 17.99, 20, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjSNP2-Mb4sDSClSZJZuaOChHGt7TmrWV_lbsjl3N1viZJ4SB", gen1);
+        Libri lib2 = new Libri("HarryPotter2", "Jnlo", 17.99, 15, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjSNP2-Mb4sDSClSZJZuaOChHGt7TmrWV_lbsjl3N1viZJ4SB", gen2);
+        Libri lib3 = new Libri("HarryPotter3", "Jnlo", 17.99, 10, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjSNP2-Mb4sDSClSZJZuaOChHGt7TmrWV_lbsjl3N1viZJ4SB", gen3 );
 
         libriService.save(lib1);
         libriService.save(lib2);
