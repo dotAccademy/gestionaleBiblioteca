@@ -1,11 +1,14 @@
 package com.biblioteca.dot.model;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIncludeProperties;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +26,10 @@ public class Genere {
     
     @ManyToOne
     @JsonIncludeProperties("id")
-    private Appartamento appartamento;
+    private Libri libri;
+
+    public Genere(String name) {
+        this.name = name;
+    }
 
 }
