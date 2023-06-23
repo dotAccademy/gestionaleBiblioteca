@@ -29,16 +29,17 @@ public class Libri {
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "libri")
     private List<Genere> genre;
 
-    public Libri(String name, String author, Double price, int quantity, String img, List<Genere> genre) {
+    public Libri(String name, String author, Double price, int quantity, String img) {
         this.name = name;
         this.author = author;
         this.price = price;
         this.quantity = quantity;
         this.img = img;
-        this.genre = genre;
+
+     
     }
 
-    
+
 
     
 
